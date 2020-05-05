@@ -13,8 +13,11 @@
 PROJECT=$1
 
 npx create-react-app $PROJECT --typescript
-yarn add express
 
-# mkdir $PROJECT
+# Setup server.js for Express
 SCRIPT_DIR="$( cd "$( dirname "$0" )" && pwd )"
 cp $SCRIPT_DIR"/server-template.js" $PROJECT"/server.js"
+
+# Install Express
+cd $PROJECT
+yarn add express
