@@ -21,3 +21,7 @@ cp $SCRIPT_DIR"/server-template.js" $PROJECT"/server.js"
 # Install Express
 cd $PROJECT
 yarn add express
+
+# Install enzyme for shallow rendering in tests
+yarn add enzyme enzyme-adapter-react-16 react-test-renderer
+cat $SCRIPT_DIR"/setupTests-template.js" >> "src/setupTests.ts"
