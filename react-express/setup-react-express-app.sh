@@ -10,6 +10,10 @@
 # Start React client app
 # yarn start
 
+# Manual steps after everything runs
+# In package.json > scripts, add
+# "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+
 PROJECT=$1
 
 npx create-react-app $PROJECT --typescript
@@ -23,5 +27,9 @@ cd $PROJECT
 yarn add express
 
 # Install enzyme for shallow rendering in tests
-yarn add enzyme enzyme-adapter-react-16 react-test-renderer
+yarn add enzyme enzyme-adapter-react-16 react-test-renderer --dev
 cat $SCRIPT_DIR"/setupTests-template.js" >> "src/setupTests.ts"
+
+# Install Eslint
+yarn add @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-react --dev
+cp $SCRIPT_DIR"/.eslintrc-template.js" ".eslintrc.js"
