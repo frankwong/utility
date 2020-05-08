@@ -1,0 +1,31 @@
+How to use
+
+Go to the directory you want to create the new project
+Run the script with the project name
+Example: set-react-express-app.sh my-project
+
+Manual steps after everything runs
+In package.json > scripts,
+add "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+add "test:watch": "react-scripts test"
+change "test": "react-scripts test" to "test": "CI=true react-scripts test"
+add husky and lint-staged settings
+
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  }
+
+Once installation succeeds, run the following in separate terminals to run application
+Start express api server
+node server.js
+Start React client app
+yarn start
+
+
