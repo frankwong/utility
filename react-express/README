@@ -1,5 +1,8 @@
 How to use
 
+Requirements
+node 14 - written and tested with this version.
+
 Go to the directory you want to create the new project
 Run the script with the project name
 Example: set-react-express-app.sh my-project
