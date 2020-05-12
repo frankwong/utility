@@ -22,3 +22,6 @@ cp $SCRIPT_DIR"/.eslintrc-template.js" ".eslintrc.js"
 
 # Install husky and lint-staged to prevent lint from being committed
 yarn add husky lint-staged --dev
+
+# If you are using vscode and has prettier installed
+cp $SCRIPT_DIR"/.prettierrc-template" ".prettierrc"
