@@ -25,3 +25,6 @@ yarn add husky lint-staged --dev
 
 # If you are using vscode and has prettier installed
 cp $SCRIPT_DIR"/.prettierrc-template" ".prettierrc"
+
+# Install redux, thunk, react-act
+yarn add redux react-redux redux-thunk react-act
