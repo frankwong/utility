@@ -27,4 +27,4 @@ yarn add husky lint-staged --dev
 cp $SCRIPT_DIR"/.prettierrc-template" ".prettierrc"
 
 # Install redux, thunk, react-act
-yarn add redux react-redux redux-thunk react-act
+yarn add redux react-redux redux-thunk redux-act
