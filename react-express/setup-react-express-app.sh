@@ -28,3 +28,6 @@ cp $SCRIPT_DIR"/.prettierrc-template" ".prettierrc"
 
 # Install redux, thunk, react-act
 yarn add redux react-redux redux-thunk redux-act
+
+# Install @types/react-redux for TS
+yarn add @types/react-redux --dev
